@@ -1,0 +1,16 @@
+[version]
+0.34.0
+
+[ignore]
+.*/test/.*
+.*/www/.*
+.*/node_modules/typography/.*
+.*/node_modules/fbjs/.*
+.*/node_modules/react-side-effect/.*
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper='Types' -> '<PROJECT_ROOT>/Types.js'
