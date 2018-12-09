@@ -7,7 +7,7 @@ import createStyles from './utils/createStyles'
 import compileStyles from './utils/compileStyles'
 import type { OptionsType } from 'Types'
 
-const typography = function(opts: OptionsType) {
+const typography = function (opts: OptionsType) {
   const defaults: OptionsType = {
     baseFontSize: '16px',
     baseLineHeight: 1.45,
@@ -25,7 +25,7 @@ const typography = function(opts: OptionsType) {
       'Fira Sans',
       'Droid Sans',
       'Helvetica Neue',
-      'sans-serif',
+      'sans-serif'
     ],
     bodyFontFamily: ['georgia', 'serif'],
     headerColor: 'inherit',
@@ -34,7 +34,7 @@ const typography = function(opts: OptionsType) {
     bodyWeight: 'normal',
     boldWeight: 'bold',
     includeNormalize: true,
-    blockMarginBottom: 1,
+    blockMarginBottom: 1
   }
 
   const options = objectAssign({}, defaults, opts)
@@ -78,18 +78,30 @@ const typography = function(opts: OptionsType) {
           document.head.appendChild(node)
         }
       }
-    },
+    }
   }
 }
 
 module.exports = typography
 
-/*
-const test = typography({
-  baseFontSize: '16px',
-  includeNormalize: false,
-})
+// const test = typography({
+//   baseFontSize: "18px",
+//   includeNormalize: false,
+//   breakpoints: {
+//     "@media screen and (min-width:800px)": {
+//       // any valid media query.
+//       baseFontSize: "20px",
+//       bodyColor: "red",
+//       scaleRatio: 2.5, // Override the default scale
+//     },
+//     "@media screen and (min-width:1200px)": {
+//       // any valid media query.
+//       scaleRatio: 4, // Override the default scale
+//       headerWeight: 'normal',
+//       headerColor: 'orange'
+//     }
+//   }
+// });
 
-console.log(test.toJSON())
-console.log(test.toString())
-*/
+// console.log(test.toJSON());
+// console.log(test.toString());

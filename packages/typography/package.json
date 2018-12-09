@@ -1,7 +1,8 @@
 {
   "name": "tyjs",
-  "description": "A fork of Kyle Mathews Typography.js with added breakpoint support",
-  "version": "0.0.1",
+  "description":
+    "A fork of Kyle Mathews Typography.js with added breakpoint support",
+  "version": "0.0.2",
   "author": "Tyler Barnes <tyler@known.design>",
   "dependencies": {
     "compass-vertical-rhythm": "^1.3.0",
@@ -32,7 +33,8 @@
   "scripts": {
     "build": "../../node_modules/.bin/babel src --out-dir dist/",
     "flow": "../../node_modules/.bin/flow",
-    "lint": "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path ../../.gitignore .",
+    "lint":
+      "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path ../../.gitignore .",
     "watch": "../../node_modules/.bin/babel -w src --out-dir dist/"
   }
 }
